@@ -4,7 +4,7 @@ train:
  weight_decay: 1e-6
  epochs: 100
  eval_every_n_epochs: 1
- fine_tune_from: "May14_11-52-39_yq01-qianmo-com-127-2-15.yq01.baidu.com"
+ fine_tune_from: "none"
  log_every_n_steps: 50
  fp16_precision: False
  train_batch_size_per_gpu: 128
