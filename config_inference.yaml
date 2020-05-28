@@ -1,0 +1,20 @@
+result_file: 'out.txt'
+train:
+ fine_tune_from: "May14_11-52-39_yq01-qianmo-com-127-2-15.yq01.baidu.com"
+ fp16_precision: False
+ train_batch_size_per_gpu: 32
+
+model:
+  out_dim: 128
+  base_model: "resnet50"
+
+gpu:
+  gpu_ids: "1"
+  gpunum: 1
+  
+dataset:
+  data_root: './data' 
+  dataset_name: 'demo' #'select_base_200e'
+  input_shape: (224,224,3)
+  num_workers: 4
+
